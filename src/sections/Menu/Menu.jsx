@@ -112,6 +112,9 @@ const Menu = () => {
           </div>
         </div>
       </div>
+      <div className="bottoom">
+        <button>View More</button>
+      </div>
     </div>
   );
 }
