@@ -68,3 +68,25 @@ body {
   }
   
 }
+
+@media screen and (max-width: 600px) {
+  #home .left h2 {
+      font-size: 64px;
+      line-height: 100%;
+    }
+
+        #about .background img {
+          width: 300px;
+          height: 300px;
+        }
+
+                #menu .top h2 {
+                  font-size: 67px;
+                  line-height: 100%;
+                }
+
+                #menu {
+                  gap: 30px;
+                }
+  
+}
