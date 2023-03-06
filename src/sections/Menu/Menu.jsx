@@ -1,6 +1,6 @@
 import './Menu.css'
 import vector from "../../assets/vectors/Vector.svg";
-import Drink from '../../assets/Drink.png'
+import Drink from '../../assets/drink.png'
 
 const Menu = () => {
     const wine = [
