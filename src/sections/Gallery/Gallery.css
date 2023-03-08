@@ -1,0 +1,110 @@
+#gallery button {
+    background: var(--gold);
+    border: none;
+    outline: none;
+    color: var(--dark);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#gallery .left {
+    /* flex: 1; */
+}
+
+#gallery .right {
+    flex: 4;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.left-arrow {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        border-radius: 50%;
+        background: var(--gold);
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+.right-arrow {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        border-radius: 50%;
+            background: var(--gold);
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 5;
+}
+
+.right-arrow svg, .left-arrow svg {
+    color: var(--dark);
+    font-size: 50px;
+}
+
+
+
+#gallery .right .image {
+    display: flex;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: end;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-x: scroll;
+    
+}
+
+#gallery .right .image::-webkit-scrollbar {
+    display: none;
+}
+.oneImg {
+    position: relative;
+}
+
+.oneImg:hover .insta {
+    display: flex;
+}
+.oneImg .insta {
+        position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+}
+
+.oneImg .insta img {
+    /* color: var(--gold); */
+    width: 50px !important;
+}
+
+#gallery .right .image img {
+    width: 250px;
+}
+
+#gallery {
+    padding-right: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+    #gallery {
+        gap: 50px;
+    }
+}

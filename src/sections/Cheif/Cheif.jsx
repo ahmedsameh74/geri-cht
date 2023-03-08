@@ -6,21 +6,20 @@ import signature from "../../assets/vectors/Kevin.png";
 
 const Cheif = () => {
   return (
-    <div className="section bg" id="cheif">
+    <div className="section bg grid" id="cheif">
       <div className="right">
         <div className="img-container">
-          <img src={cheif} alt="food" />
+          <img src={cheif} className="img" alt="food" />
         </div>
       </div>
       <div className="left">
-        <p>Chef’s Word</p>
+        <p className='sm-title'>Chef’s Word</p>
         <img src={vector} alt="" />
-        <h2>What we believe in</h2>
-        <p>
-          <img src={quote} alt="" />{" "}
-          Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-          volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-          aliquam amet tellus{" "}
+        <h2 className='sec-title'>What we believe in</h2>
+        <p className='text'>
+          <img src={quote} alt="" /> Sit tellus lobortis sed senectus vivamus
+          molestie. Condimentum volutpat morbi facilisis quam scelerisque
+          sapien. Et, penatibus aliquam amet tellus{" "}
         </p>
         <p>Kevin Luo</p>
         <p>Chef & Founder</p>

@@ -30,9 +30,13 @@ const Navbar = () => {
         <div className="center">
           <div className="list">
             {navItems.map((item, index) => (
-                <a href={item.link} key={item.id} className={item.active ? "active" : ""}>
-                  {item.title}
-                </a>
+              <a
+                href={item.link}
+                key={item.id}
+                className={item.active ? "active" : ""}
+              >
+                {item.title}
+              </a>
             ))}
           </div>
         </div>
@@ -73,6 +77,10 @@ const Navbar = () => {
               </a>
             </div>
           ))}
+          <div className="btns">
+            <button className="btn">Login / Register</button>
+            <button className="btn">Book a table</button>
+          </div>
         </div>
       )}
     </div>

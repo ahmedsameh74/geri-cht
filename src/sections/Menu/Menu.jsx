@@ -71,11 +71,11 @@ const Menu = () => {
 
 
   return (
-    <div className="section" id="menu">
+    <div className="section flex-center" id="menu">
       <div className="top">
-        <p>Menu that fits you palatte</p>
+        <p className='sm-title'>Menu that fits you palatte</p>
         <img src={vector} alt="" />
-        <h2>Today’s Special</h2>
+        <h2 className='sec-title'>Today’s Special</h2>
       </div>
       <div className="bottom">
         <div className="left">

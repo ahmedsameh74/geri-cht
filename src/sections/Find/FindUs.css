@@ -1,0 +1,40 @@
+#find button {
+    background: var(--gold);
+    border: none;
+    outline: none;
+    color: var(--dark);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+#find .left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+#find .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+@media screen and (max-width: 1100px) {
+    
+
+    #find .right {
+        justify-content: center;
+        display: flex;
+    }
+
+    #find .right .img-container {
+        width: 50%;
+    }
+
+}

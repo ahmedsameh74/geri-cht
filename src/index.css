@@ -11,6 +11,10 @@ a {
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --gold: #DCCA87;
   --dark: #0C0B08;
@@ -24,13 +28,126 @@ body {
   font-family: var(--font);
 }
 
+.sec-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  color: var(--gold);
+  letter-spacing: var(--space);
+}
+
+.sm-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--light);
+
+  letter-spacing: 0.04em;
+}
+
+.xs-title {
+  font-family: 'Cormorant Upright';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+
+  color: var(--gold);
+}
+
+.sm-para {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+
+  color: var(--light);
+}
+
 .section {
   padding: 20px 100px;
   margin: 20px 0;
 }
 
-.bg {
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .bg {
   background: url('./assets/Mask.png') no-repeat center;
+  background-size: cover;
+} */
+
+.img-container {
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.img-container::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 50%;
+  height: 50%;
+  background: var(--gold);
+  z-index: 0;
+}
+
+.img-container::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 50%;
+  height: 50%;
+  background: var(--gold);
+  z-index: 0;
+}
+
+.btn {
+    background: var(--gold);
+    border: none;
+    outline: none;
+    color: var(--dark);
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+.img {
+  width: 100%;
+  max-width: 500px;
+  /* height: 100%; */
+  object-fit: cover;
+  position: inherit;
+  z-index: 1;
 }
 
 .slide-bottom {
@@ -66,8 +183,19 @@ body {
   .section {
     padding: 20px 0px;
   }
+
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .flex-center {
+      flex-direction: column;
+    }
   
 }
+
+
 
 @media screen and (max-width: 600px) {
   #home .left h2 {

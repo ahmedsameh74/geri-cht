@@ -1,7 +1,4 @@
 #menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -14,27 +11,17 @@
     text-align: center;
 }
 
-#menu .top p {
-    font-style: normal;
-        font-weight: 700;
-        font-size: 23px;
-        line-height: 130%;
-        /* identical to box height, or 30px */
-    
-        letter-spacing: 0.04em;
-        color: #fff;
-}
 
-#menu .top h2 {
+
+/* #menu .top h2 {
     font-style: normal;
         font-weight: 700;
         font-size: 90px;
         line-height: 130%;
-        /* identical to box height, or 117px */
     
         letter-spacing: 0.04em;
         color: var(--gold);
-}
+} */
 
 .menu-title {
     font-style: normal;

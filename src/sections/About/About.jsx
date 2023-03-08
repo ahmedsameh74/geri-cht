@@ -5,13 +5,13 @@ import vector from "../../assets/vectors/Vector.svg";
 
 const About = () => {
   return (
-    <div className="section bg" id="about">
+    <div className="section bg flex-center" id="about">
       <div className="background">
         <img src={G} alt="g" />
       </div>
       <div className="about-content">
         <div className="left">
-          <h3 className='title'>About us</h3>
+          <h3 className='sec-title'>About us</h3>
           <img src={vector} alt="vector" />
           <p className='text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
@@ -24,7 +24,7 @@ const About = () => {
           <img src={knive} alt="" />
         </div>
         <div className="right">
-          <h3 className='title'>Our History</h3>
+          <h3 className='sec-title'>Our History</h3>
           <img src={vector} alt="vector" />
           <p className='text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis

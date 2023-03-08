@@ -4,12 +4,12 @@ import vector from "../../assets/vectors/Vector.svg";
 
 const Home = () => {
   return (
-    <div className="section" id="home">
+    <div className="section grid" id="home">
       <div className="left">
-        <p>Chase the new Flavour</p>
+        <p className='sm-title'>Chase the new Flavour</p>
         <img src={vector} alt="" />
         <h2>The key to Fine dining</h2>
-        <p>
+        <p className='text'>
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum
           volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
           aliquam amet tellus{" "}
@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <div className="right">
         <div className="img-container">
-            <img src={img} alt="food" />
+          <img src={img} className="img" alt="food" />
         </div>
       </div>
     </div>

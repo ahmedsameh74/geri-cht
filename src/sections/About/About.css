@@ -6,12 +6,12 @@
     
 }
 
-#about .background {
+ .background {
     position: absolute;
     inset: 0;
 }
 
-#about .background img {
+ .background img {
     width: 391px;
     height: 415px;
     position: absolute;
@@ -43,26 +43,11 @@
     transform: rotate(180deg);
 }
 
-.title {
-    font-style: normal;
-        font-weight: 600;
-        font-size: 64px;
-        line-height: 130%;
-        color: var(--gold);
-        text-align: right;
-        letter-spacing: 0.03em;
+.about-content .left .sec-title {
+        text-align: right !important;
 }
 
-.text {
-    font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 175%;
-        color: var(--light);
-        text-align: right;
-        letter-spacing: 0.04em;
-}
+
 
 /* .about-content .center img {
     width: 703px;
@@ -80,6 +65,10 @@
 
 .about-content .right h3, .about-content .right p {
     text-align: left;
+}
+
+.about-content .left p {
+    text-align: right;
 }
 
 .about-content button {
