@@ -2,7 +2,7 @@ import './Home.css'
 import img from "../../assets/khloe-arledge-ND3edEmzcdQ-unsplash.png";
 import vector from "../../assets/vectors/Vector.svg";
 
-const Home = () => {
+const Main = () => {
   return (
     <div className="section grid" id="home">
       <div className="left">
@@ -25,4 +25,4 @@ const Home = () => {
   );
 }
 
-export default Home
+export default Main

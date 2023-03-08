@@ -1,34 +1,27 @@
-import { useState } from 'react'
 import './App.css'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
-import Navbar from './components/Navbar/Navbar'
-import About from './sections/About/About'
-import Awards from './sections/Awards/Awards'
-import Cheif from './sections/Cheif/Cheif'
-import FindUs from './sections/Find/FindUs'
-import Gallery from './sections/Gallery/Gallery'
-import Home from './sections/Home/Home'
-import Menu from './sections/Menu/Menu'
-import Video from './sections/Video/Video'
+import Home from './pages/Home/Home'
+import Register from './pages/Register/Register'
+import Login from './pages/Login/Login'
+
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { Layout } from './components/Layout/Layout'
+import About from './pages/About/About';
+import Blogs from './pages/Blogs/Blogs';
+
+const router = createBrowserRouter([
+  {path: '/', element: <Layout/>, children: [
+    {path: '/', element: <Home/>},
+    {path: '/signup', element: <Register/>},
+    {path: '/about', element: <About/>},
+    {path: '/login', element: <Login/>},
+    {path: '/blogs', element: <Blogs/>}
+
+  ]}
+])
 
 function App() {
 
-  return (
-    <div className="App">
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Menu/>
-      <Cheif/>
-      <Video/>
-      <Awards/>
-      <Gallery/>
-      <FindUs/>
-      <Contact/>
-      <Footer/>
-    </div>
-  )
+  return <RouterProvider router={router} />;
 }
 
 export default App
