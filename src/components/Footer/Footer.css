@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .footer-content div {
         display: flex;
@@ -34,9 +34,10 @@
     flex-direction: row !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .footer-content {
         gap: 50px;
+        flex-wrap: wrap;
     }
 
     
