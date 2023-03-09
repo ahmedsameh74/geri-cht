@@ -1,9 +1,12 @@
+import About from '../../sections/About/About'
 import './About.css'
 
-const About = () => {
+const AboutUs = () => {
   return (
-    <div>About</div>
+    <div className='section'>
+      <About/>
+    </div>
   )
 }
 
-export default About
+export default AboutUs

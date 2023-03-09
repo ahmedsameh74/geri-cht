@@ -1,0 +1,39 @@
+.Blog {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Blog-header {
+    width: 100%;
+        align-items: center;
+        /* height: 150px; */
+        display: flex;
+        justify-content: center;
+}
+
+.Blog-header img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.Blog-body {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.Blog-text {
+    color: white;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.Blog-details {
+        color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+}

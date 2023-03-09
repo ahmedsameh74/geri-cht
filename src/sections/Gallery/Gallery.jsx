@@ -22,10 +22,12 @@ const Gallery = () => {
         scrollRef.current.scrollLeft += 100
         // setCurr(curr + 300)
         console.log(scrollRef.current.scrollLeft)
+        // setCurr(curr === instagram.length - 1 ? 0 : curr + 1);
     }
     const handleLeft = () => {
         // setCurr(curr - 300)
         scrollRef.current.scrollLeft -= 100
+        // setCurr(curr === 0 ? instagram.length - 1 : curr - 1);
     }
 
   return (
@@ -43,7 +45,7 @@ const Gallery = () => {
         <div className="left-arrow" onClick={handleLeft}>
           <BsArrowLeftShort />
         </div>
-        <div className="image" ref={scrollRef} style={{transform: curr && `translateX(${curr}px)`}}>
+        <div className="image" ref={scrollRef} style={{transform:`translateX(-${curr * 90}px)`}}>
           {instagram.map((item, index) => {
             return (
               <div className="oneImg" key={index}>

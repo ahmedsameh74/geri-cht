@@ -1,8 +1,5 @@
+import MenuItem from '../../components/MenuItem/MenuItem'
 import './Menu.css'
-import vector from "../../assets/vectors/Vector.svg";
-import Drink from '../../assets/drink.png'
-import MenuItem from '../../components/MenuItem/MenuItem';
-import { Link } from 'react-router-dom';
 
 const Menu = () => {
     const wine = [
@@ -70,28 +67,22 @@ const Menu = () => {
         country: "Gin | Sweet Vermouth | Campari | Orange garnish",
       },
     ];
-
-
   return (
-    <div className="section flex-center" id="menu">
-      <div className="top">
-        <p className="sm-title">Menu that fits you palatte</p>
-        <img src={vector} alt="" />
-        <h2 className="sec-title">Today’s Special</h2>
+    <div className="section grid Menu">
+      <div>
+        <MenuItem menuItem={wine} menuName="softDrinks" />
       </div>
-      <div className="bottom">
-        <div className="left">
-          <MenuItem menuItem={wine} menuName="Wine & Beer" />
-        </div>
-        <div className="center">
-          <img src={Drink} alt="" />
-        </div>
-        <div className="right">
-          <MenuItem menuItem={cocktail} menuName="Cocktail" />
-        </div>
+      <div>
+        <MenuItem menuItem={cocktail} menuName="cocktail" />
       </div>
-      <div className="bottoom">
-        <Link to='/menu' className='btn'>View More</Link>
+      <div>
+        <MenuItem menuItem={wine} menuName="wine" />
+      </div>
+      <div>
+        <MenuItem menuItem={wine} menuName="wine" />
+      </div>
+      <div>
+        <MenuItem menuItem={wine} menuName="wine" />
       </div>
     </div>
   );

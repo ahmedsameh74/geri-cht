@@ -7,19 +7,12 @@
     cursor: pointer;
 }
 
-#gallery .left {
-    /* flex: 1; */
-}
-
 #gallery .right {
     flex: 4;
     position: relative;
     overflow: hidden;
     width: 100%;
     transition: all 0.5s ease-in-out;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .left-arrow {
@@ -60,11 +53,11 @@
 #gallery .right .image {
     display: flex;
     /* flex-wrap: wrap; */
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: end;
+    /* width: 300vw; */
     gap: 20px;
     transition: all 0.5s ease-in-out;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     
 }
 
@@ -100,6 +93,7 @@
 
 #gallery {
     padding-right: 0;
+    gap: 20px;
 }
 
 
