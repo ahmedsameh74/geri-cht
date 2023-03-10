@@ -43,8 +43,12 @@ const Navbar = () => {
         </div>
         <div className="right">
           <div className="btns">
-            <Link to='/signup' className="btn">Login / Register</Link>
-            <Link to='/booking' className="btn">Book a table</Link>
+            <Link to="/signup" className="btn">
+              Login / Register
+            </Link>
+            <Link to="/booking" className="btn">
+              Book a table
+            </Link>
           </div>
         </div>
         <div className="icon">
@@ -79,8 +83,12 @@ const Navbar = () => {
             </div>
           ))}
           <div className="btns">
-            <Link to='/signup' className="btn">Login / Register</Link>
-            <Link to='/booking' className="btn">Book a table</Link>
+            <Link to="/signup" className="btn" onClick={() => setMenu(false)}>
+              Login / Register
+            </Link>
+            <Link to="/booking" className="btn" onClick={() => setMenu(false)}>
+              Book a table
+            </Link>
           </div>
         </div>
       )}
