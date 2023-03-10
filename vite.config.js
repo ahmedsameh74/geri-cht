@@ -11,6 +11,7 @@ import react from '@vitejs/plugin-react'
 
 import pluginRewriteAll from 'vite-plugin-rewrite-all';
 
-export default {
-  plugins: [pluginRewriteAll(), react()]
-}
+export default defineConfig({
+  plugins: [ react()],
+  appType: 'spa'
+})
