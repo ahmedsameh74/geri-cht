@@ -37,3 +37,10 @@
     width: unset;
     flex: 4;
 }
+
+@media screen and (max-width: 600px) {
+    .form-wrapper {
+        padding: 35px 20px;
+    }
+    
+}
