@@ -8,7 +8,7 @@
         box-shadow: 22px 30px 95px 1px rgb(0 0 0 / 70%);
         background: none;
         padding: 10px;
-        width: 500px;
+        width: 100% !important;
         color: white;
 }
 
