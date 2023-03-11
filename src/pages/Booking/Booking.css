@@ -1,0 +1,115 @@
+.date-input {
+    display: none;
+}
+
+.date-input-field {
+    height: 50px;
+        border: 1px solid rgba(220, 202, 135, 0.2);
+        box-shadow: 22px 30px 95px 1px rgb(0 0 0 / 70%);
+        background: none;
+        padding: 10px;
+        width: 500px;
+        color: white;
+}
+
+#date::-webkit-calendar-picker-indicator::after {
+    content: '';
+    display: block;
+      background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-32.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -16px;
+}
+
+#date::-webkit-calendar-picker-indicator {
+    background-color: var(--gold);
+        padding: 5px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.radios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.input .react-select-container {
+    height: 50px;
+        border: 1px solid rgba(220, 202, 135, 0.2);
+        box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+        background: none;
+        padding: 10px;
+        width: 100% !important;
+        color: #ffffff;
+        /* flex: 4; */
+}
+
+.react-select__single-value {
+    color: var(--gold) !important;
+}
+
+.react-select__control {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0;
+    bottom: 0;
+    background: var(--dark) !important;
+    border: 1px solid rgba(220, 202, 135, 0.2) !important; 
+        box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7) !important;
+        /* background: none; */
+}
+
+.react-select__value-container {
+    padding: 0 8px !important;
+}
+
+.react-select__placeholder {
+    color: var(--gold) !important;
+}
+
+.react-select__input-container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.react-select__indicators span {
+    background-color: var(--gold) !important;
+}
+
+.react-select__indicators svg {
+    fill: var(--gold) !important;
+}
+
+.react-select__menu {
+    background: var(--dark) !important;
+    border: 1px solid rgba(220, 202, 135, 0.2) !important; 
+        box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7) !important;
+        left: 0 !important;
+}
+
+.react-select__menu-list {
+    background: var(--dark) !important;
+    border: 1px solid rgba(220, 202, 135, 0.2) !important; 
+        box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7) !important;
+}
+
+.react-select__option {
+    background: var(--dark) !important;
+    color: var(--gold) !important;
+}
+
+.react-select__option:hover {
+    background: var(--gold) !important;
+    color: var(--dark) !important;
+}

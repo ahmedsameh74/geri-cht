@@ -52,7 +52,7 @@
         justify-content: center;
     }
 
-    .input input {
+    .input input, .input .react-select-container {
         width: 100%;
     }
 

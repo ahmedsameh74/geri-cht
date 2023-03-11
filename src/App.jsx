@@ -11,6 +11,8 @@ import Menu from './pages/Menu/Menu';
 import ContactUs from './pages/Contact/Contact';
 import Booking from './pages/Booking/Booking';
 import Blog from './pages/Blog/Blog';
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
 const router = createBrowserRouter([
   {path: '/', element: <Layout/>, children: [
@@ -27,9 +29,15 @@ const router = createBrowserRouter([
   ]}
 ])
 
-function App() {
 
-  return <RouterProvider router={router} />;
+
+function App({children}) {
+  return <LocalizationProvider dateAdapter={AdapterDayjs}>
+    {/* {children} */}
+<RouterProvider router={router} />;
+  </LocalizationProvider>;
+
+  return 
 }
 
 export default App
