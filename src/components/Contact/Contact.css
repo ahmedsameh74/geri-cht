@@ -50,6 +50,7 @@
         flex-direction: column !important;
         gap: 20px;
         justify-content: center;
+        width: 100% !important;
     }
 
     .input input, .input .react-select-container {
