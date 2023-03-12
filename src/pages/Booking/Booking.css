@@ -12,6 +12,25 @@
         color: white;
 }
 
+.react-calendar {
+    /* background: var(--gold) !important; */
+    border: 1px solid rgba(220, 202, 135, 0.2);
+    background: none;
+        box-shadow: 22px 30px 95px 1px rgb(0 0 0 / 70%);
+        color: #ffffff !important;
+}
+
+.react-calendar__navigation {
+    background: var(--gold) !important;
+}
+
+.react-calendar__tile--now {
+    background: var(--dark) !important;
+}
+
+.react-calendar__navigation  span, button{
+    color: #ffffff !important;
+}
 #date::-webkit-calendar-picker-indicator::after {
     content: '';
     display: block;

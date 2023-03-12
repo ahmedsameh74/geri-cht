@@ -1,5 +1,8 @@
 import { useRef, useState } from 'react';
 import Select from "react-select";
+// import TextField from "@mui/material/TextField";
+import DatePicker from "react-date-picker";
+import Calendar from "react-calendar";
 import './Booking.css'
 
 const Booking = () => {
@@ -45,6 +48,8 @@ const Booking = () => {
     }
   };
 
+  const [value, onChange] = useState(new Date());
+
   
 
   return (
@@ -69,14 +74,8 @@ const Booking = () => {
         </div>
         <div className="row">
           <div className="input">
-            <label htmlFor="date">Date</label>
-            <input type="datetime-local" id="date" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="input">
             <label htmlFor="">peoples?</label>
-            
+
             <Select
               // defaultValue={colourOptions[0]}
               isClearable
@@ -99,7 +98,16 @@ const Booking = () => {
             </div> */}
           </div>
         </div>
-        <div className="row" style={{margingTop: '30px'}}>
+        <div className="row">
+          {/* <DatePicker onChange={onChange} value={value} className='date' id='date' /> */}
+          <div className="input">
+            <label htmlFor="date">Date</label>
+            <Calendar />
+            {/* <input type="datetime-local" id="date" /> */}
+          </div>
+        </div>
+
+        <div className="row" style={{ margingTop: "30px" }}>
           <button
             className="btn"
             type="submit"
