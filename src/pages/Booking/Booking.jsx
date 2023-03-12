@@ -60,6 +60,7 @@ const Booking = () => {
           <div className="input">
             <label htmlFor="email">Email</label>
             <input
+            className='custom'
               type="text"
               id="email"
               name="email"

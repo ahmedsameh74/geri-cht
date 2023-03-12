@@ -25,11 +25,20 @@
 }
 
 .react-calendar__tile--now {
-    background: var(--dark) !important;
+    background: var(--gold) !important;
+    color: var(--dark) !important;
+}
+
+.react-calendar__tile--now span, .react-calendar__tile--now button {
+    color: var(--dark) !important;
 }
 
 .react-calendar__navigation  span, button{
-    color: #ffffff !important;
+    color: var(--dark) !important;
+}
+
+.react-calendar__month-view span, .react-calendar__month-view button {
+    color: var(--gold) !important;
 }
 #date::-webkit-calendar-picker-indicator::after {
     content: '';
@@ -70,7 +79,17 @@
         padding: 10px;
         width: 100% !important;
         color: #ffffff;
-        /* flex: 4; */
+        flex: 4;
+}
+
+@media screen and (max-width: 1100px) {
+    .input .react-select-container {
+        flex: unset;
+    }
+
+    .custom {
+        width: 100% !important;
+    }
 }
 
 .react-select__single-value {
